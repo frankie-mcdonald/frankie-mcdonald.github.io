@@ -1,4 +1,71 @@
 * {
   box-sizing: border-box;
-  background-color: aqua;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navbar {
+  border: white 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__title {
+  padding: 1rem 0 1rem 2rem;
+  font-size: 1.5rem;
+  font-family: "shrikhand";
+}
+.navbar__list {
+  display: flex;
+  list-style: none;
+}
+.navbar__list :hover {
+  cursor: pointer;
+  border: rgb(195, 255, 236) 1px solid;
+  border-radius: 0.5rem;
+}
+.navbar__items {
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.hero {
+  background-image: url("../assets/images/Into_the_water.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  border-bottom: white 1px solid;
+}
+
+.aboutme {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+}
+.aboutme__body {
+  margin: 1rem;
+}
+.aboutme__image {
+  height: 18rem;
+  border-radius: 50%;
+  border: white 0.2rem solid;
+  margin: 3rem 3rem 0 3rem;
+}
+.aboutme__subheader {
+  margin: 2rem 0;
+}
+.aboutme__title {
+  font-family: "shrikhand";
+  font-size: 3rem;
+  font-weight: 500;
+}
+.aboutme__text {
+  font-size: 1rem;
+  font-family: nunito;
+  padding-bottom: 1rem;
+  text-align: left;
 }/*# sourceMappingURL=styles.css.map */
