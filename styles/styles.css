@@ -18,18 +18,22 @@
   font-size: 1.5rem;
   font-family: "shrikhand";
 }
+.navbar__link {
+  text-decoration: none;
+}
 .navbar__list {
   display: flex;
   list-style: none;
 }
-.navbar__list :hover {
+.navbar__items {
+  padding: 1rem;
+  margin-right: 1rem;
+}
+.navbar__items :hover {
   cursor: pointer;
+  padding: 0.5rem;
   border: rgb(195, 255, 236) 1px solid;
   border-radius: 0.5rem;
-}
-.navbar__items {
-  padding: 0.5rem;
-  margin-right: 1rem;
 }
 
 .hero {
@@ -37,6 +41,9 @@
   background-size: cover;
   background-position: center;
   height: 500px;
+  font-size: 6rem;
+  padding-top: 15rem;
+  font-family: "shrikhand";
   border-bottom: white 1px solid;
 }
 
@@ -68,4 +75,43 @@
   font-family: nunito;
   padding-bottom: 1rem;
   text-align: left;
+}
+
+.projects {
+  margin: 2rem;
+}
+.projects__title {
+  font-family: "shrikhand";
+  font-size: 2rem;
+  margin: 2rem 0;
+  background-color: rgba(255, 255, 255, 0.124);
+}
+.projects__header {
+  font-size: 2rem;
+  text-align: left;
+}
+.projects__text {
+  font-family: "nunito";
+  font-weight: 300;
+  padding: 2rem 0;
+  text-align: left;
+}
+.projects__video {
+  width: 100%;
+  border: white 2px solid;
+  border-radius: 3rem;
+}
+
+.contact__title {
+  font-family: "shrikhand";
+  font-size: 2rem;
+  margin: 2rem 0 0 0;
+}
+.contact__icon {
+  margin: 2rem 2rem;
+  text-decoration: none;
+  height: 3rem;
+}
+.contact__link {
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

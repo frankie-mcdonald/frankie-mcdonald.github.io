@@ -16,16 +16,20 @@
     <nav class="navbar">
       <h2 class="navbar__title">Frankie McDonald</h2>
       <ul class="navbar__list">
-        <li class="navbar__items">About</li>
-        <li class="navbar__items">Education</li>
-        <li class="navbar__items">Projects</li>
-        <li class="navbar__items">3D Animation</li>
-        <li class="navbar__items">Contact</li>
+        <li class="navbar__items">
+          <a class="navbar__link" href="#about">About</a>
+        </li>
+        <li class="navbar__items">
+          <a class="navbar__link" href="#projects">Projects</a>
+        </li>
+        <li class="navbar__items">
+          <a class="navbar__link" href="#contact">Contact</a>
+        </li>
       </ul>
     </nav>
 
-    <section class="hero"></section>
-    <section class="aboutme">
+    <section class="hero">Frankie McDonald</section>
+    <section id="about" class="aboutme">
       <div class="aboutme-div">
         <img
           src="./assets/images/profile2.png"
@@ -140,22 +144,56 @@
         </h2>
       </div>
     </section>
-
-    <div class="contact">
-      <h2 class="contact__title">Let's connect!</h2>
-      <a href="https://youtube.com/@frankiemcdonalddesigns" target="_blank">
+    <section class="projects">
+      <h2 id="projects" class="projects__title">Projects</h2>
+      <h3 class="projects__header">St'at'imcets with Kaya - 2025</h3>
+      <h4 class="projects__text">
+        St'at'imc with Kaya is a passion project of mine. Coming from the
+        St'at'imc nation I found that we lacked resources to learn the language.
+        This is an app to learn the language with lessons that feature audio,
+        interactive games, and quizzes. The idea is that users will be able to
+        track their progress and hear the words and be able to practice whenever
+        they want.
+      </h4>
+      <video class="projects__video" controls>
+        <source
+          src="./assets/videos/Capstone_presentation2025.mp4"
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+    <div id="contact" class="contact">
+      <h2 class="contact__title">Socials</h2>
+      <a
+        class="contact__link"
+        href="https://youtube.com/@frankiemcdonalddesigns"
+      >
         <img
-          src="https://img.shields.io/static/v1?message=Youtube&logo=youtube&label=&color=FF0000&logoColor=white&labelColor=&style=for-the-badge"
-          height="35"
+          class="contact__icon"
+          src="./assets/icons/youtube.png"
           alt="youtube logo"
         />
       </a>
-      <img width="12" />
-      <a href="https://linkedin.com/in/frankie-mcdonald" target="_blank">
+      <a class="contact__link" href="https://linkedin.com/in/frankie-mcdonald">
         <img
-          src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge"
-          height="35"
+          class="contact__icon"
+          src="./assets/icons/linkedin.png"
           alt="linkedin logo"
+        />
+      </a>
+      <a class="contact__link" href="https://github.com/frankie-mcdonald">
+        <img
+          class="contact__icon"
+          src="./assets/icons/github.png"
+          alt="github logo"
+        />
+      </a>
+      <a class="contact__link" href="https://vimeo.com/frankiemcdonalddesigns">
+        <img
+          class="contact__icon"
+          src="./assets/icons/vimeo.png"
+          alt="vimeo logo"
         />
       </a>
     </div>
