@@ -1,3 +1,4 @@
+@use "./mixins" as *;
 * {
   box-sizing: border-box;
   background-color: black;
@@ -12,9 +13,16 @@
   justify-content: space-between;
   align-items: center;
   &__title {
-    padding: 1rem 0 1rem 2rem;
-    font-size: 1.5rem;
     font-family: "shrikhand";
+    font-size: 1rem;
+    padding: 0.5rem;
+    @include tablet {
+      padding: 1rem 0 1rem 2rem;
+      font-size: 1.5rem;
+    }
+    @include desktop {
+      font-size: 2rem;
+    }
   }
   &__link {
     text-decoration: none;
@@ -26,6 +34,9 @@
   &__items {
     padding: 1rem;
     margin-right: 1rem;
+    @include desktop {
+      font-size: 1.5rem;
+    }
     :hover {
       cursor: pointer;
       padding: 0.5rem;
@@ -38,64 +49,168 @@
   background-image: url("../assets/images/Into_the_water.jpg");
   background-size: cover;
   background-position: center;
-  height: 500px;
-  font-size: 6rem;
-  padding-top: 15rem;
   font-family: "shrikhand";
   border-bottom: white 1px solid;
+  font-size: 2.5rem;
+  height: 10rem;
+  padding-top: 6rem;
+  @include tablet {
+    font-size: 4rem;
+    padding-top: 15rem;
+    height: 25rem;
+  }
 }
 .aboutme {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
   padding: 1rem;
+  align-items: center;
+  @include tablet {
+    align-items: flex-start;
+    flex-direction: row;
+  }
   &__body {
     margin: 1rem;
   }
 
   &__image {
-    height: 18rem;
     border-radius: 50%;
     border: white 0.2rem solid;
-    margin: 3rem 3rem 0 3rem;
+    height: 10rem;
+    @include tablet {
+      height: 18rem;
+      margin: 3rem 3rem 0 3rem;
+    }
   }
   &__subheader {
     margin: 2rem 0;
+  }
+  &__icon {
+    height: 2rem;
   }
   &__title {
     font-family: "shrikhand";
     font-size: 3rem;
     font-weight: 500;
+    margin: 1rem 0;
+    border-bottom: white 1px solid;
   }
   &__text {
     font-size: 1rem;
     font-family: nunito;
     padding-bottom: 1rem;
     text-align: left;
+    line-height: 25px;
+    text-align: center;
+    @include tablet {
+      font-size: 1.2rem;
+    }
+    @include desktop {
+      font-size: 1.5rem;
+      line-height: 40px;
+    }
   }
 }
 .projects {
-  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   &__title {
     font-family: "shrikhand";
     font-size: 2rem;
     margin: 2rem 0;
+    width: 100%;
     background-color: rgba(255, 255, 255, 0.124);
+    @include desktop {
+      font-size: 2.2rem;
+    }
   }
-  &__header {
-    font-size: 2rem;
-    text-align: left;
-  }
+
   &__text {
     font-family: "nunito";
     font-weight: 300;
-    padding: 2rem 0;
+    font-size: 1.2rem;
+    padding: 2rem;
+    text-align: center;
+    @include desktop {
+      font-size: 1.5rem;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__header {
+    font-family: "shrikhand";
+    text-align: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    margin: 2rem 0;
+    width: 100%;
+    background-color: rgba(177, 255, 195, 0.172);
+    @include desktop {
+      font-size: 2rem;
+      padding: 1rem;
+    }
+    &--special {
+      background-color: rgba(198, 247, 210, 0.402);
+      font-size: 2rem;
+      padding: 0.5rem 8rem;
+    }
+  }
+  &__items {
+    width: 90%;
+    list-style: none;
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__gif {
+    border: white 1px solid;
+    width: 50%;
+    border-radius: 30px;
+  }
+  &__div {
+    display: flex;
+  }
+  &__info {
+    color: white;
+    font-family: "poppins";
+    font-size: 1rem;
     text-align: left;
+    padding-left: 2rem;
+    line-height: 25px;
+    &--title {
+      font-size: 1.5rem;
+      line-height: 50px;
+      @include tablet {
+        font-size: 2rem;
+        line-height: 60px;
+      }
+      @include desktop {
+        font-size: 2.5rem;
+        line-height: 70px;
+      }
+    }
+    @include tablet {
+      font-size: 1.2rem;
+      line-height: 35px;
+    }
+    @include desktop {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
   }
   &__video {
-    width: 100%;
-    border: white 2px solid;
+    width: 80%;
+    border: white 3px solid;
     border-radius: 3rem;
+    margin: 2rem 0;
   }
 }
 .contact {
@@ -107,7 +222,7 @@
   &__icon {
     margin: 2rem 2rem;
     text-decoration: none;
-    height: 3rem;
+    height: 2.5rem;
   }
   &__link {
     text-decoration: none;

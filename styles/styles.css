@@ -14,9 +14,20 @@
   align-items: center;
 }
 .navbar__title {
-  padding: 1rem 0 1rem 2rem;
-  font-size: 1.5rem;
   font-family: "shrikhand";
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+@media screen and (min-width: 720px) {
+  .navbar__title {
+    padding: 1rem 0 1rem 2rem;
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navbar__title {
+    font-size: 2rem;
+  }
 }
 .navbar__link {
   text-decoration: none;
@@ -29,6 +40,11 @@
   padding: 1rem;
   margin-right: 1rem;
 }
+@media screen and (min-width: 1280px) {
+  .navbar__items {
+    font-size: 1.5rem;
+  }
+}
 .navbar__items :hover {
   cursor: pointer;
   padding: 0.5rem;
@@ -40,66 +56,193 @@
   background-image: url("../assets/images/Into_the_water.jpg");
   background-size: cover;
   background-position: center;
-  height: 500px;
-  font-size: 6rem;
-  padding-top: 15rem;
   font-family: "shrikhand";
   border-bottom: white 1px solid;
+  font-size: 2.5rem;
+  height: 10rem;
+  padding-top: 6rem;
+}
+@media screen and (min-width: 720px) {
+  .hero {
+    font-size: 4rem;
+    padding-top: 15rem;
+    height: 25rem;
+  }
 }
 
 .aboutme {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
   padding: 1rem;
+  align-items: center;
+}
+@media screen and (min-width: 720px) {
+  .aboutme {
+    align-items: flex-start;
+    flex-direction: row;
+  }
 }
 .aboutme__body {
   margin: 1rem;
 }
 .aboutme__image {
-  height: 18rem;
   border-radius: 50%;
   border: white 0.2rem solid;
-  margin: 3rem 3rem 0 3rem;
+  height: 10rem;
+}
+@media screen and (min-width: 720px) {
+  .aboutme__image {
+    height: 18rem;
+    margin: 3rem 3rem 0 3rem;
+  }
 }
 .aboutme__subheader {
   margin: 2rem 0;
+}
+.aboutme__icon {
+  height: 2rem;
 }
 .aboutme__title {
   font-family: "shrikhand";
   font-size: 3rem;
   font-weight: 500;
+  margin: 1rem 0;
+  border-bottom: white 1px solid;
 }
 .aboutme__text {
   font-size: 1rem;
   font-family: nunito;
   padding-bottom: 1rem;
   text-align: left;
+  line-height: 25px;
+  text-align: center;
+}
+@media screen and (min-width: 720px) {
+  .aboutme__text {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .aboutme__text {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
 }
 
 .projects {
-  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .projects__title {
   font-family: "shrikhand";
   font-size: 2rem;
   margin: 2rem 0;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.124);
 }
-.projects__header {
-  font-size: 2rem;
-  text-align: left;
+@media screen and (min-width: 1280px) {
+  .projects__title {
+    font-size: 2.2rem;
+  }
 }
 .projects__text {
   font-family: "nunito";
   font-weight: 300;
-  padding: 2rem 0;
+  font-size: 1.2rem;
+  padding: 2rem;
+  text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .projects__text {
+    font-size: 1.5rem;
+  }
+}
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects__header {
+  font-family: "shrikhand";
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+  width: 100%;
+  background-color: rgba(177, 255, 195, 0.172);
+}
+@media screen and (min-width: 1280px) {
+  .projects__header {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
+.projects__header--special {
+  background-color: rgba(198, 247, 210, 0.402);
+  font-size: 2rem;
+  padding: 0.5rem 8rem;
+}
+.projects__items {
+  width: 90%;
+  list-style: none;
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.projects__gif {
+  border: white 1px solid;
+  width: 50%;
+  border-radius: 30px;
+}
+.projects__div {
+  display: flex;
+}
+.projects__info {
+  color: white;
+  font-family: "poppins";
+  font-size: 1rem;
   text-align: left;
+  padding-left: 2rem;
+  line-height: 25px;
+}
+.projects__info--title {
+  font-size: 1.5rem;
+  line-height: 50px;
+}
+@media screen and (min-width: 720px) {
+  .projects__info--title {
+    font-size: 2rem;
+    line-height: 60px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .projects__info--title {
+    font-size: 2.5rem;
+    line-height: 70px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .projects__info {
+    font-size: 1.2rem;
+    line-height: 35px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .projects__info {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
 }
 .projects__video {
-  width: 100%;
-  border: white 2px solid;
+  width: 80%;
+  border: white 3px solid;
   border-radius: 3rem;
+  margin: 2rem 0;
 }
 
 .contact__title {
@@ -110,7 +253,7 @@
 .contact__icon {
   margin: 2rem 2rem;
   text-decoration: none;
-  height: 3rem;
+  height: 2.5rem;
 }
 .contact__link {
   text-decoration: none;
