@@ -195,7 +195,7 @@
   justify-content: center;
 }
 .projects__gif {
-  border: white 1px solid;
+  border: white 2px solid;
   width: 50%;
   border-radius: 30px;
 }
@@ -211,18 +211,18 @@
   line-height: 25px;
 }
 .projects__info--title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 50px;
 }
 @media screen and (min-width: 720px) {
   .projects__info--title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 60px;
   }
 }
 @media screen and (min-width: 1280px) {
   .projects__info--title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 70px;
   }
 }

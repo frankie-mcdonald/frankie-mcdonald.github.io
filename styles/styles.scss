@@ -171,7 +171,7 @@
     justify-content: center;
   }
   &__gif {
-    border: white 1px solid;
+    border: white 2px solid;
     width: 50%;
     border-radius: 30px;
   }
@@ -186,14 +186,14 @@
     padding-left: 2rem;
     line-height: 25px;
     &--title {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       line-height: 50px;
       @include tablet {
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 60px;
       }
       @include desktop {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         line-height: 70px;
       }
     }
