@@ -15,8 +15,13 @@
 }
 .navbar__title {
   font-family: "shrikhand";
-  font-size: 1rem;
   padding: 0.5rem;
+  font-size: 0.5rem;
+}
+@media screen and (min-width: 480px) {
+  .navbar__title {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 720px) {
   .navbar__title {
@@ -39,6 +44,12 @@
 .navbar__items {
   padding: 1rem;
   margin-right: 1rem;
+  font-size: 0.75rem;
+}
+@media screen and (min-width: 720px) {
+  .navbar__items {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   .navbar__items {
@@ -58,9 +69,14 @@
   background-position: center;
   font-family: "shrikhand";
   border-bottom: white 1px solid;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   height: 10rem;
   padding-top: 6rem;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    font-size: 2.5rem;
+  }
 }
 @media screen and (min-width: 720px) {
   .hero {
@@ -101,26 +117,43 @@
   margin: 2rem 0;
 }
 .aboutme__icon {
-  height: 2rem;
+  height: 1.5rem;
+  margin: 0.5rem 0;
+}
+@media screen and (min-width: 720px) {
+  .aboutme__icon {
+    height: 2rem;
+  }
 }
 .aboutme__title {
   font-family: "shrikhand";
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   margin: 1rem 0;
   border-bottom: white 1px solid;
 }
+@media screen and (min-width: 480px) {
+  .aboutme__title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 720px) {
+  .aboutme__title {
+    font-size: 3rem;
+  }
+}
 .aboutme__text {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-family: nunito;
   padding-bottom: 1rem;
   text-align: left;
-  line-height: 25px;
+  line-height: 20px;
   text-align: center;
 }
 @media screen and (min-width: 720px) {
   .aboutme__text {
     font-size: 1.2rem;
+    line-height: 30px;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -144,15 +177,21 @@
 }
 @media screen and (min-width: 1280px) {
   .projects__title {
-    font-size: 2.2rem;
+    font-size: 4rem;
+    padding: 2rem 0;
   }
 }
 .projects__text {
   font-family: "nunito";
   font-weight: 300;
-  font-size: 1.2rem;
-  padding: 2rem;
+  font-size: 0.75rem;
+  padding: 1rem;
   text-align: center;
+}
+@media screen and (min-width: 720px) {
+  .projects__text {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   .projects__text {
@@ -168,22 +207,32 @@
 .projects__header {
   font-family: "shrikhand";
   text-align: center;
-  font-size: 1.5rem;
-  border-radius: 10px;
+  font-size: 1rem;
+  padding: 0.5rem 0;
   margin: 2rem 0;
   width: 100%;
   background-color: rgba(177, 255, 195, 0.172);
+}
+@media screen and (min-width: 720px) {
+  .projects__header {
+    font-size: 1.5rem;
+  }
 }
 @media screen and (min-width: 1280px) {
   .projects__header {
     font-size: 2rem;
     padding: 1rem;
+    margin: 5rem 0;
   }
 }
 .projects__header--special {
   background-color: rgba(198, 247, 210, 0.402);
-  font-size: 2rem;
-  padding: 0.5rem 8rem;
+  font-size: 1rem;
+}
+@media screen and (min-width: 720px) {
+  .projects__header--special {
+    font-size: 1.5rem;
+  }
 }
 .projects__items {
   width: 90%;
@@ -205,14 +254,33 @@
 .projects__info {
   color: white;
   font-family: "poppins";
-  font-size: 1rem;
+  font-size: 0.5rem;
   text-align: left;
   padding-left: 2rem;
-  line-height: 25px;
+  line-height: 15px;
+}
+@media screen and (min-width: 480px) {
+  .projects__info {
+    font-size: 1rem;
+    line-height: 25px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .projects__info {
+    font-size: 1rem;
+    line-height: 35px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .projects__info {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    padding-left: 8rem;
+  }
 }
 .projects__info--title {
-  font-size: 1.2rem;
-  line-height: 50px;
+  font-size: 0.75rem;
+  line-height: 40px;
 }
 @media screen and (min-width: 720px) {
   .projects__info--title {
@@ -226,34 +294,22 @@
     line-height: 70px;
   }
 }
-@media screen and (min-width: 720px) {
-  .projects__info {
-    font-size: 1.2rem;
-    line-height: 35px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .projects__info {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
-  }
-}
 .projects__video {
   width: 80%;
   border: white 3px solid;
-  border-radius: 3rem;
+  border-radius: 2rem;
   margin: 2rem 0;
 }
 
 .contact__title {
   font-family: "shrikhand";
-  font-size: 2rem;
+  font-size: 1rem;
   margin: 2rem 0 0 0;
 }
 .contact__icon {
-  margin: 2rem 2rem;
+  margin: 0.5rem 0.5rem;
   text-decoration: none;
-  height: 2.5rem;
+  height: 2rem;
 }
 .contact__link {
   text-decoration: none;
