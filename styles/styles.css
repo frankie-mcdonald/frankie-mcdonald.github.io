@@ -53,7 +53,7 @@
 }
 @media screen and (min-width: 1280px) {
   .navbar__items {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 }
 .navbar__items :hover {
@@ -97,6 +97,7 @@
   .aboutme {
     align-items: flex-start;
     flex-direction: row;
+    margin: 2rem;
   }
 }
 .aboutme__body {
@@ -106,6 +107,7 @@
   border-radius: 50%;
   border: white 0.2rem solid;
   height: 10rem;
+  margin: 1rem;
 }
 @media screen and (min-width: 720px) {
   .aboutme__image {
@@ -114,15 +116,14 @@
   }
 }
 .aboutme__subheader {
-  margin: 2rem 0;
+  margin: 1.2rem 0;
 }
 .aboutme__icon {
-  height: 1.5rem;
-  margin: 0.5rem 0;
+  height: 2rem;
 }
 @media screen and (min-width: 720px) {
   .aboutme__icon {
-    height: 2rem;
+    height: 2.2rem;
   }
 }
 .aboutme__title {
@@ -137,13 +138,8 @@
     font-size: 2.5rem;
   }
 }
-@media screen and (min-width: 720px) {
-  .aboutme__title {
-    font-size: 3rem;
-  }
-}
 .aboutme__text {
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-family: nunito;
   padding-bottom: 1rem;
   text-align: left;
@@ -152,14 +148,16 @@
 }
 @media screen and (min-width: 720px) {
   .aboutme__text {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 30px;
+    padding: 0 3rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .aboutme__text {
-    font-size: 1.5rem;
     line-height: 40px;
+    font-size: 1.2rem;
+    padding: 0 5rem;
   }
 }
 
@@ -171,31 +169,36 @@
 .projects__title {
   font-family: "shrikhand";
   font-size: 2rem;
-  margin: 2rem 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.124);
+  font-weight: 500;
+  margin: 1rem 0;
+  width: 90%;
+  border-bottom: white 1px solid;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 480px) {
   .projects__title {
-    font-size: 4rem;
-    padding: 2rem 0;
+    font-size: 2.5rem;
+  }
+}
+@media screen and (min-width: 720px) {
+  .projects__title {
+    width: 100%;
   }
 }
 .projects__text {
   font-family: "nunito";
   font-weight: 300;
-  font-size: 0.75rem;
+  font-size: 1rem;
   padding: 1rem;
   text-align: center;
 }
 @media screen and (min-width: 720px) {
   .projects__text {
-    font-size: 1rem;
+    line-height: 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
   .projects__text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 .projects__list {
@@ -267,13 +270,12 @@
 }
 @media screen and (min-width: 720px) {
   .projects__info {
-    font-size: 1rem;
     line-height: 35px;
   }
 }
 @media screen and (min-width: 1280px) {
   .projects__info {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     line-height: 2.5rem;
     padding-left: 8rem;
   }
@@ -306,10 +308,21 @@
   font-size: 1rem;
   margin: 2rem 0 0 0;
 }
+@media screen and (min-width: 720px) {
+  .contact__title {
+    font-size: 2rem;
+  }
+}
 .contact__icon {
   margin: 0.5rem 0.5rem;
   text-decoration: none;
   height: 2rem;
+}
+@media screen and (min-width: 720px) {
+  .contact__icon {
+    height: 3rem;
+    margin: 1rem;
+  }
 }
 .contact__link {
   text-decoration: none;
